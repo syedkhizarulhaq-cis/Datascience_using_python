@@ -1,9 +1,13 @@
-csv_file=open("health_inspection_chi.csv")
 
-line=next(csv_file)
-#print(line)
+#with open("health_inspection_chi.csv") as csv_file:
+    #for line in csv_file:
+        #pass
 
-for line in csv_file:
-    pass
-print(line)
-csv_file.close()
+#import pandas as p
+
+
+try:
+    import numpy
+except ImportError:
+    print("no numpy")
+
