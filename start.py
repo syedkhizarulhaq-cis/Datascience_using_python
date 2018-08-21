@@ -25,6 +25,13 @@ dta=dta.set_index('inspection_id')
 
 #print(dta.iloc[[0,2]]) #give me the first and third record
 #print(dta.iloc[:5]) #give me the first 5 records
-print(dta.iloc[:5,[0,5]]) #give me the first 5 rows and give me the 0th column and 5th column
+#print(dta.iloc[:5,[0,5]]) #give me the first 5 rows and give me the 0th column and 5th column
 
-dta.inspection_date=dta.inspection_date.apply(pd.to_datetime)
+#dta.inspection_date=dta.inspection_date.apply(pd.to_datetime)
+
+#print(dta.info())
+
+#del dta['location'] #deleting a column from table in pandas
+
+print(dta.violations.isnull()) #if certain values of violations column are null or not
+
